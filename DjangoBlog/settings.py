@@ -103,12 +103,11 @@ WSGI_APPLICATION = 'DjangoBlog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-import pymysql
-pymysql.install_as_MySQLdb()
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_blog',
+        'NAME': 'blog',
         'USER': 'root',
         'PASSWORD': 'mbsb74194741',
         'HOST': '127.0.0.1',
